@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+/* 
+
+
+
+                        <Route path="/" element={<ProtectedRoute userData={userData}><Home /></ProtectedRoute>} />
+            <Route path="/home" element={<ProtectedRoute userData={userData}><Home /></ProtectedRoute>} />
+            <Route path="/about" element={<ProtectedRoute userData={userData}><About /></ProtectedRoute>} />
+            <Route path="/movies" element={<ProtectedRoute userData={userData}><Movies /></ProtectedRoute>} />
+            <Route path="/tvShows" element={<ProtectedRoute userData={userData}><TvShows /></ProtectedRoute>} />
+            <Route path="/profile" element={<ProtectedRoute userData={userData}><Profile userData={userData} /></ProtectedRoute>} />
+            <Route path="/login" element={<ProtectedRoute userData={userData}><Login saveUserData={saveUserData} /></ProtectedRoute>} />
+            <Route path="/register" element={<ProtectedRoute userData={userData}><Register /></ProtectedRoute>} />
+            <Route path="/people" element={<ProtectedRoute userData={userData}><People /></ProtectedRoute>} />
+            <Route path="*" element={<ProtectedRoute userData={userData}><Notfound /></ProtectedRoute>} />
+
+
+*/
